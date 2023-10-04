@@ -1,0 +1,23 @@
+<%- include('../_layouts/adminheader') %>
+<h2 class="page-title">Pages</h2>
+<a href="/admin/pages/add-pages" class="btn btn-primary">Add a New Page</a>
+<br><br>
+<table class="table table-sripped">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Edite</th>
+      <th>Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% pages.forEach(page => {  %>
+      <td><%= page.title %></td>
+      <td><a href="/admin/pages/edit-pages/<%=page.slug %>">Edite</a></td>
+      <td><a href="/admin/pages/delete-pages/<%=page.slug %>">Delete</a></td>
+    <% }); %>
+  </tbody>
+
+</table>
+
+<%- include('../_layouts/adminfooter') %>
