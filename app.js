@@ -28,7 +28,7 @@ async function main() {
 main();
 
 app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname,'public'));
+app.set('views', path.join(__dirname,'views'));
 
 //set global error variables
 app.locals.errors = null;
