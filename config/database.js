@@ -1,1 +1,1 @@
-module.exports = {database: 'mongodb://localhost:27017/cmscart'};
+module.exports = {database: "mongodb+srv://admin:admin@cluster0.2lf6sca.mongodb.net/teddyshop?retryWrites=true&w=majority"};

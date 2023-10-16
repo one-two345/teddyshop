@@ -14,4 +14,4 @@ const pages_schema = new mongoose.Schema({
   
   });
   
-  const pages = module.exports = mongoose.model('pages', pages_schema);
+  const page = module.exports = mongoose.model('Page', pages_schema);
