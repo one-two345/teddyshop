@@ -37,9 +37,9 @@
           <ul class="nav navbar-nav">
               <% pages.forEach(function(page){ %>
               <% if (page.slug == "home") { %>
-              <li><a href="/"><%= page.title %></a></li>
+              <li class="pages"><a href="/"><%= page.title %></a></li>
               <% } else {%>
-              <li><a href="/<%= page.slug %>"><%= page.title %></a></li>
+              <li class="pages"><a href="/<%= page.slug %>"><%= page.title %></a></li>
               <% } %>
               <% }); %>
           </ul>
